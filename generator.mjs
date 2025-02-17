@@ -23,7 +23,7 @@ const meta = `
 	<meta property="og:url" content="https://smallsites.gdwithgd.com/">
 	<meta name="og:title" property="og:title" content="SKIN & BONES">
 	<meta property="og:description" content="Skin and Bones is an award-winning director representation and production company that makes great work.">
-	<meta property="og:image" content="/assets/opengraph.jpg">
+	<meta property="og:image" content="/assets/meta/opengraph.jpg">
 `;
 
 // Generate news
