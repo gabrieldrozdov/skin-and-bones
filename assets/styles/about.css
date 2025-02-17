@@ -49,7 +49,7 @@
 .about-media-big {
 	display: block;
 	grid-column: span 2;
-	background-color: red;
+	background-color: black;
 	border-radius: 5px;
 	object-fit: cover;
 	width: 100%;
@@ -60,7 +60,7 @@
 }
 .about-media-small {
 	display: block;
-	background-color: red;
+	background-color: black;
 	border-radius: 5px;
 	object-fit: cover;
 	width: 100%;

@@ -16,7 +16,7 @@ directors.sort((a, b) => a.sorting.localeCompare(b.sorting));
 const year = new Date().getFullYear();
 
 // Meta tags
-let meta = `
+const meta = `
 	<meta name="author" content="SKIN & BONES">
 	<meta name="keywords" content="Film Company, Production Partners, Storytellers, Female Owned, Shot Callers">
 	<meta name="description" content="Skin and Bones is an award-winning director representation and production company that makes great work.">
