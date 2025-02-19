@@ -8,7 +8,7 @@ window.addEventListener('wheel', (event) => {
 	aboutScrollDelta = Math.floor((aboutScrollPos / aboutThreshold)) * aboutThreshold;
 
 	const about = document.querySelector('.about-text');
-	if (window.innerWidth > 1030) {
+	if (window.innerWidth > 1030 && !menuOpen) {
 		let difference = Math.abs(aboutPrevScrollDelta - aboutScrollDelta);
 		if (difference > 50) {
 			if (event.deltaY > 0) {
