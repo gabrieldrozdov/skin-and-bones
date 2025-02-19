@@ -87,8 +87,8 @@ async function downloadImage(url, filename, folder) {
 	// Ensure directory exists
 	if (!fs.existsSync(folder)) fs.mkdirSync(folder, { recursive: true });
 
-	// Skip if image already exists
-	const filePath = path.join(folder, filename);
+	// Skip if compressed image already exists
+	const filePath = path.join(folder, "thumbnail-"+filename);
 	if (fs.existsSync(filePath)) {
 		return
 	}
