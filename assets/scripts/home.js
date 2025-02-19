@@ -95,9 +95,9 @@ function pickVideos() {
 	let i = 0;
 	for (let video of document.querySelectorAll('video')) {
 		videoSource = video.querySelector('source');
-		videoSource.src = '/assets/thumbnails/' + randomVideos[i][1];
-		video.poster = `/assets/thumbnails/${randomVideos[i][0]}`;
-		video.style.backgroundImage = `url('/assets/thumbnails/${randomVideos[i][0]}')`;
+		videoSource.src = randomVideos[i][1];
+		video.poster = randomVideos[i][0];
+		video.style.backgroundImage = `url('${randomVideos[i][0]}')`;
 		video.setAttribute("playsinline", "");
 		video.setAttribute("muted", "");
 		if (window.innerWidth > 1030 && video.classList.contains('desktop-video')) {
