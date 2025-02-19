@@ -123,6 +123,8 @@
 	width: 1px;
 	height: var(--line-height);
 	background-color: black;
+	margin-left: 1px;
+	transform: translateX(-.3px);
 }
 .director-portfolio-work-item-caption-title {
 	min-height: var(--line-height);

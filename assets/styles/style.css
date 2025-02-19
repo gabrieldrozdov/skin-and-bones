@@ -36,6 +36,7 @@ button {
 }
 @media only screen and (max-width: 1030px) {
 	:root {
+		--font-size: 14px;
 		--nav-height: calc(var(--line-height) * 6);
 	}
 }
@@ -138,6 +139,9 @@ button {
 .nav-directors {
 	grid-column: span 3;
 	columns: 4;
+	--container-width: calc(100vw - calc(var(--padding) * 2));
+	--cell-width: calc(calc(var(--container-width) - calc(var(--padding) * 5)) / 6);
+	width: 88.7%;
 }
 .nav-directors a {
 	display: inline-block;
@@ -268,7 +272,7 @@ button {
 	display: none;
 	align-items: end;
 	grid-template-columns: repeat(6, 1fr);
-	z-index: 999;
+	z-index: 999999;
 	background-color: white;
 	--container-height: calc(100dvh - calc(var(--padding) * 2));
 	--grid-height: calc(var(--container-height) - var(--nav-height));
@@ -305,8 +309,11 @@ button {
 .contact button:active {
 	opacity: .3;
 }
+.contact-block-social {
+	text-align: right;
+}
 .contact-social {
-	text-decoration: underline;
+	text-decoration: underline !important;
 	text-decoration-thickness: 1px;
 	text-underline-offset: .1em;
 }
@@ -325,6 +332,9 @@ button {
 	.contact-spacer {
 		display: block;
 	}
+	.contact-block-social {
+		text-align: left;
+	}
 }
 @media only screen and (max-width: 1030px) {
 	.container[data-view="contact"] .contact {
@@ -332,21 +342,23 @@ button {
 		flex-direction: column;
 		align-items: start;
 		justify-content: end;
-		gap: var(--line-height);
+		gap: calc(var(--line-height) * 2);
 		padding: var(--line-height);
 		bottom: 0;
 		height: unset;
 		top: calc(var(--line-height) * 2);
 		padding-top: calc(var(--line-height) * 4);
 	}
+	.contact-spacer {
+		display: none;
+	}
 	.contact-block-line {
 		display: none;
 	}
 	.contact-close {
-		position: static;
-		order: -1;
+		top: calc(var(--line-height) * -1.18);
+		right: calc(var(--font-size) * 7.1);
 		opacity: .3;
-		margin-bottom: var(--line-height);
 	}
 	.contact-close:hover {
 		opacity: 1;

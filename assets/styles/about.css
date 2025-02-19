@@ -40,7 +40,7 @@
 }
 .about-media-images {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 2.5fr 1fr;
 	flex-grow: 1;
 	gap: var(--padding);
 	align-items: end;
@@ -48,7 +48,6 @@
 }
 .about-media-big {
 	display: block;
-	grid-column: span 2;
 	background-color: black;
 	border-radius: 5px;
 	object-fit: cover;
@@ -111,6 +110,7 @@
 	--about-height: calc(var(--height2) - calc(var(--line-height) * 5));
 	min-height: var(--about-height);
 	padding-bottom: calc(var(--line-height) * 2);
+	padding-right: 25%;
 }
 .about-text-awards-title {
 	
@@ -137,6 +137,8 @@
 .about-text-awards {
 	display: none;
 	margin-top: var(--line-height);
+	padding-right: 25%;
+	text-wrap: pretty;
 }
 .about-text-awards[data-active="1"] {
 	display: block;
@@ -146,6 +148,10 @@
 		font-size: inherit;
 		line-height: inherit;
 		min-height: auto;
+		padding-right: unset;
+	}
+	.about-text-awards {
+		padding-right: unset;
 	}
 }
 

@@ -26,6 +26,41 @@ const meta = `
 	<meta property="og:image" content="/assets/meta/opengraph.jpg">
 `;
 
+// Contact
+const contact = `
+	<div class="contact">
+		<div class="contact-block">
+			<div class="contact-block-line"></div>
+			<div>GENERAL</div>
+			<div>+1 416-639-5920</div>
+			<div><a href="mailto:info@skinandbonesfilm.com">INFO@SKINANDBONESFILM.COM</a></div>
+		</div>
+		<div class="contact-block">
+			<div class="contact-block-line"></div>
+			<div>LIANE THOMAS</div>
+			<div>+1 416-471-1354</div>
+			<div><a href="mailto:liane@skinandbonesfilm.com">LIANE@SKINANDBONESFILM.COM</a></div>
+		</div>
+		<div class="contact-block">
+			<div class="contact-block-line"></div>
+			<div>JOAN BELL</div>
+			<div>+1 416-994-8562</div>
+			<div><a href="mailto:liane@skinandbonesfilm.com">JOANE@SKINANDBONESFILM.COM</a></div>
+		</div>
+		<div class="contact-spacer">
+
+		</div>
+		<div class="contact-block">
+			<div>1028 QUEEN ST. W. #200</div>
+			<div>TORONTO, ON M6J 1H6, CANADA</div>
+		</div>
+		<div class="contact-block contact-block-social">
+			<div>FOLLOW US ON <a href="https://www.instagram.com/skinandbonesfilm/" target="_blank" class="contact-social">INSTAGRAM</a></div>
+		</div>
+		<button class="contact-close" onclick="toggleContact();">[CLOSE]</button>
+	</div>
+`;
+
 // Generate news
 const newsData = content['news'];
 let news = '';
@@ -260,37 +295,7 @@ async function generatePages() {
 					${news}
 				</div>
 
-				<div class="contact">
-					<div class="contact-block">
-						<div class="contact-block-line"></div>
-						<div>GENERAL</div>
-						<div>+1 416-639-5920</div>
-						<div><a href="mailto:info@skinandbonesfilm.com">INFO@SKINANDBONESFILM.COM</a></div>
-					</div>
-					<div class="contact-block">
-						<div class="contact-block-line"></div>
-						<div>LIANE THOMAS</div>
-						<div>+1 416-471-1354</div>
-						<div><a href="mailto:liane@skinandbonesfilm.com">LIANE@SKINANDBONESFILM.COM</a></div>
-					</div>
-					<div class="contact-block">
-						<div class="contact-block-line"></div>
-						<div>JOAN BELL</div>
-						<div>+1 416-994-8562</div>
-						<div><a href="mailto:liane@skinandbonesfilm.com">JOANE@SKINANDBONESFILM.COM</a></div>
-					</div>
-					<div class="contact-spacer">
-
-					</div>
-					<div class="contact-block">
-						<div>1028 QUEEN ST. W. #200</div>
-						<div>TORONTO, ON M6J 1H6, CANADA</div>
-					</div>
-					<div class="contact-block">
-						<div>FOLLOW US ON <a href="https://www.instagram.com/skinandbonesfilm/" target="_blank" class="contact-social">INSTAGRAM</a></div>
-					</div>
-					<button class="contact-close" onclick="toggleContact();">[CLOSE]</button>
-				</div>
+				${contact}
 			</div>
 			<script src="/assets/scripts/nav.js"></script>
 			<script src="/assets/scripts/directors-media.js"></script>
@@ -535,37 +540,7 @@ function generateDirectorPortfolioPage(director) {
 					${news}
 				</div>
 
-				<div class="contact">
-					<div class="contact-block">
-						<div class="contact-block-line"></div>
-						<div>GENERAL</div>
-						<div>+1 416-639-5920</div>
-						<div><a href="mailto:info@skinandbonesfilm.com">INFO@SKINANDBONESFILM.COM</a></div>
-					</div>
-					<div class="contact-block">
-						<div class="contact-block-line"></div>
-						<div>LIANE THOMAS</div>
-						<div>+1 416-471-1354</div>
-						<div><a href="mailto:liane@skinandbonesfilm.com">LIANE@SKINANDBONESFILM.COM</a></div>
-					</div>
-					<div class="contact-block">
-						<div class="contact-block-line"></div>
-						<div>JOAN BELL</div>
-						<div>+1 416-994-8562</div>
-						<div><a href="mailto:liane@skinandbonesfilm.com">JOANE@SKINANDBONESFILM.COM</a></div>
-					</div>
-					<div class="contact-spacer">
-
-					</div>
-					<div class="contact-block">
-						<div>1028 QUEEN ST. W. #200</div>
-						<div>TORONTO, ON M6J 1H6, CANADA</div>
-					</div>
-					<div class="contact-block">
-						<div>FOLLOW US ON <a href="https://www.instagram.com/skinandbonesfilm/" target="_blank" class="contact-social">INSTAGRAM</a></div>
-					</div>
-					<button class="contact-close" onclick="toggleContact();">[CLOSE]</button>
-				</div>
+				${contact}
 			</div>
 
 			<script src="/assets/scripts/nav.js"></script>
@@ -723,37 +698,7 @@ function generateAboutPage() {
 					${news}
 				</div>
 
-				<div class="contact">
-					<div class="contact-block">
-						<div class="contact-block-line"></div>
-						<div>GENERAL</div>
-						<div>+1 416-639-5920</div>
-						<div><a href="mailto:info@skinandbonesfilm.com">INFO@SKINANDBONESFILM.COM</a></div>
-					</div>
-					<div class="contact-block">
-						<div class="contact-block-line"></div>
-						<div>LIANE THOMAS</div>
-						<div>+1 416-471-1354</div>
-						<div><a href="mailto:liane@skinandbonesfilm.com">LIANE@SKINANDBONESFILM.COM</a></div>
-					</div>
-					<div class="contact-block">
-						<div class="contact-block-line"></div>
-						<div>JOAN BELL</div>
-						<div>+1 416-994-8562</div>
-						<div><a href="mailto:liane@skinandbonesfilm.com">JOANE@SKINANDBONESFILM.COM</a></div>
-					</div>
-					<div class="contact-spacer">
-
-					</div>
-					<div class="contact-block">
-						<div>1028 QUEEN ST. W. #200</div>
-						<div>TORONTO, ON M6J 1H6, CANADA</div>
-					</div>
-					<div class="contact-block">
-						<div>FOLLOW US ON <a href="https://www.instagram.com/skinandbonesfilm/" target="_blank" class="contact-social">INSTAGRAM</a></div>
-					</div>
-					<button class="contact-close" onclick="toggleContact();">[CLOSE]</button>
-				</div>
+				${contact}
 			</div>
 
 			<script>
@@ -1282,8 +1227,8 @@ function generateHomePage() {
 					<div class="home-mobile-text home-mobile-span">
 						<div>WHAT WE DO</div>
 						<div></div>
-						<div>We make work for brands, business</div>
-						<div>and anyone with a story to tell.</div>
+						<div>We make work for brands, business and</div>
+						<div>anyone with a story to tell.</div>
 						<div></div>
 					</div>
 					<div class="home-mobile-2col">
@@ -1344,9 +1289,9 @@ function generateHomePage() {
 					<div class="home-mobile-text home-mobile-span">
 						<div>WHERE WE ARE</div>
 						<div></div>
-						<div>In the heart of one of Toronto’s</div>
-						<div>most vibrant districts. We fit</div>
-						<div>right in.</div>
+						<div>In the heart of one of Toronto’s most</div>
+						<div>vibrant districts. We fit right in.</div>
+						<div></div>
 					</div>
 					<div class="home-mobile-2col">
 						<div class="home-mobile-text" data-mobile="group5">
@@ -1406,9 +1351,9 @@ function generateHomePage() {
 					<div class="home-mobile-text home-mobile-span">
 						<div>HOW WE DO IT</div>
 						<div></div>
-						<div>We balance intense-passion with</div>
-						<div>sensible-chill and it seems to be</div>
-						<div>working pretty well so far.</div>
+						<div>We balance intense-passion with sensible</div>
+						<div>chill and it seems to be working pretty</div>
+						<div>well so far.</div>
 					</div>
 					<div class="home-mobile-2col">
 						<div class="home-mobile-text" data-mobile="group7">
@@ -1493,37 +1438,7 @@ function generateHomePage() {
 					${news}
 				</div>
 
-				<div class="contact">
-					<div class="contact-block">
-						<div class="contact-block-line"></div>
-						<div>GENERAL</div>
-						<div>+1 416-639-5920</div>
-						<div><a href="mailto:info@skinandbonesfilm.com">INFO@SKINANDBONESFILM.COM</a></div>
-					</div>
-					<div class="contact-block">
-						<div class="contact-block-line"></div>
-						<div>LIANE THOMAS</div>
-						<div>+1 416-471-1354</div>
-						<div><a href="mailto:liane@skinandbonesfilm.com">LIANE@SKINANDBONESFILM.COM</a></div>
-					</div>
-					<div class="contact-block">
-						<div class="contact-block-line"></div>
-						<div>JOAN BELL</div>
-						<div>+1 416-994-8562</div>
-						<div><a href="mailto:liane@skinandbonesfilm.com">JOANE@SKINANDBONESFILM.COM</a></div>
-					</div>
-					<div class="contact-spacer">
-
-					</div>
-					<div class="contact-block">
-						<div>1028 QUEEN ST. W. #200</div>
-						<div>TORONTO, ON M6J 1H6, CANADA</div>
-					</div>
-					<div class="contact-block">
-						<div>FOLLOW US ON <a href="https://www.instagram.com/skinandbonesfilm/" target="_blank" class="contact-social">INSTAGRAM</a></div>
-					</div>
-					<button class="contact-close" onclick="toggleContact();">[CLOSE]</button>
-				</div>
+				${contact}
 			</div>
 
 			<script>
@@ -1545,8 +1460,3 @@ function generateHomePage() {
 }
 
 generatePages();
-
-// ask rebecca about awards for people and awards for about page
-// also images for about page
-
-// need to communicate strict rules about naming things on simian
