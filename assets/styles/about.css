@@ -140,6 +140,9 @@
 	padding-right: 25%;
 	text-wrap: pretty;
 }
+.about-text-awards a {
+	text-decoration: unset;
+}
 .about-text-awards[data-active="1"] {
 	display: block;
 }
@@ -162,6 +165,7 @@
 	align-items: end;
 	padding-top: calc(var(--line-height) * 2);
 	opacity: .3;
+	height: calc(var(--line-height) * 4);
 }
 .about-text-footer-mobile {
 	display: none;
@@ -178,4 +182,14 @@
 		gap: var(--line-height);
 		opacity: .3;
 	}
+}
+
+/* Credits */
+.about-text-footer-desktop-credit {
+	font-size: calc(var(--font-size) * .8);
+	line-height: 1.3em;
+}
+.about-text-footer-mobile-credit {
+	font-size: calc(var(--font-size) * .8);
+	line-height: 1.3em;
 }

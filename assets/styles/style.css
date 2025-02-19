@@ -13,6 +13,7 @@
 	--padding: 1rem;
 	--nav-height: calc(var(--line-height) * 10);
 	font-size: var(--font-size);
+	overscroll-behavior: none;
 }
 body {
 	font-family: "Monospace Typewriter", monospace;
@@ -197,6 +198,7 @@ button {
 	bottom: 0;
 	overflow: scroll;
 	padding: var(--padding);
+	left: 0;
 }
 .nav-mobile-header {
 	display: flex;

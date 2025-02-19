@@ -662,7 +662,7 @@ function generateAboutPage() {
 						</div>
 
 						<div class="about-text-footer-desktop">
-							<div>
+							<div class="about-text-footer-desktop-credit">
 								Website design by <a href="https://rebeccawilkinson.me/" target="_blank">Rebecca Wilkinson</a><br>
 								Website development by <a href="https://noreplica.com/" target="_blank">No Replica</a><br>
 							</div>
@@ -671,7 +671,7 @@ function generateAboutPage() {
 					</div>
 
 					<div class="about-text-footer-mobile">
-						<div>
+						<div class="about-text-footer-mobile-credit">
 							Website design by <a href="https://rebeccawilkinson.me/" target="_blank">Rebecca Wilkinson</a><br>
 							Website development by <a href="https://noreplica.com/" target="_blank">No Replica</a><br>
 						</div>
@@ -877,7 +877,7 @@ function generateHomePage() {
 							<div></div>
 						</div>
 						<a class="home-cell-video" id="home-video-small-1" href="/directors/">
-							<video autoplay muted playsinline loop disableremoteplayback>
+							<video autoplay muted playsinline loop disableremoteplayback class="desktop-video">
 								<source>
 							</video>
 						</a>
@@ -987,7 +987,7 @@ function generateHomePage() {
 
 					<div class="home-column">
 						<a class="home-cell-video-large" id="home-video-large" href="/directors/">
-							<video autoplay muted playsinline loop disableremoteplayback>
+							<video autoplay muted playsinline loop disableremoteplayback class="desktop-video">
 								<source>
 							</video>
 						</a>
@@ -1012,7 +1012,7 @@ function generateHomePage() {
 							<div></div>
 						</div>
 						<a class="home-cell-video" id="home-video-small-2" href="/directors/">
-							<video autoplay muted playsinline loop disableremoteplayback>
+							<video autoplay muted playsinline loop disableremoteplayback class="desktop-video">
 								<source>
 							</video>
 						</a>
@@ -1157,7 +1157,7 @@ function generateHomePage() {
 
 				<div class="home-mobile">
 					<a class="home-mobile-video-large" id="home-mobile-video-large" href="/directors/">
-						<video autoplay muted playsinline loop disableremoteplayback>
+						<video autoplay muted playsinline loop disableremoteplayback class="mobile-video">
 							<source>
 						</video>
 					</a>
@@ -1188,7 +1188,7 @@ function generateHomePage() {
 							<div></div>
 						</div>
 						<a class="home-mobile-video-small" id="home-mobile-video-small-1" href="/directors/">
-							<video autoplay muted playsinline loop disableremoteplayback>
+							<video autoplay muted playsinline loop disableremoteplayback class="mobile-video">
 								<source>
 							</video>
 						</a>
@@ -1212,7 +1212,7 @@ function generateHomePage() {
 					</div>
 					<div class="home-mobile-2col-right">
 						<a class="home-mobile-video-small" id="home-mobile-video-small-2" href="/directors/">
-							<video autoplay muted playsinline loop disableremoteplayback>
+							<video autoplay muted playsinline loop disableremoteplayback class="mobile-video">
 								<source>
 							</video>
 						</a>
@@ -1250,7 +1250,7 @@ function generateHomePage() {
 							<div></div>
 						</div>
 						<a class="home-mobile-video-small" id="home-mobile-video-small-3" href="/directors/">
-							<video autoplay muted playsinline loop disableremoteplayback>
+							<video autoplay muted playsinline loop disableremoteplayback class="mobile-video">
 								<source>
 							</video>
 						</a>
@@ -1274,7 +1274,7 @@ function generateHomePage() {
 					</div>
 					<div class="home-mobile-2col-right">
 						<a class="home-mobile-video-small" id="home-mobile-video-small-4" href="/directors/">
-							<video autoplay muted playsinline loop disableremoteplayback>
+							<video autoplay muted playsinline loop disableremoteplayback class="mobile-video">
 								<source>
 							</video>
 						</a>
@@ -1312,7 +1312,7 @@ function generateHomePage() {
 							<div>HIGH CONCEPT</div>
 						</div>
 						<a class="home-mobile-video-small" id="home-mobile-video-small-5" href="/directors/">
-							<video autoplay muted playsinline loop disableremoteplayback>
+							<video autoplay muted playsinline loop disableremoteplayback class="mobile-video">
 								<source>
 							</video>
 						</a>
@@ -1336,7 +1336,7 @@ function generateHomePage() {
 					</div>
 					<div class="home-mobile-2col-right">
 						<a class="home-mobile-video-small" id="home-mobile-video-small-6" href="/directors/">
-							<video autoplay muted playsinline loop disableremoteplayback>
+							<video autoplay muted playsinline loop disableremoteplayback class="mobile-video">
 								<source>
 							</video>
 						</a>
@@ -1374,7 +1374,7 @@ function generateHomePage() {
 							<div>HEAVY LIFTERS</div>
 						</div>
 						<a class="home-mobile-video-small" id="home-mobile-video-small-7" href="/directors/">
-							<video autoplay muted playsinline loop disableremoteplayback>
+							<video autoplay muted playsinline loop disableremoteplayback class="mobile-video">
 								<source>
 							</video>
 						</a>
@@ -1398,7 +1398,7 @@ function generateHomePage() {
 					</div>
 					<div class="home-mobile-2col-right">
 						<a class="home-mobile-video-small" id="home-mobile-video-small-8" href="/directors/">
-							<video autoplay muted playsinline loop disableremoteplayback>
+							<video autoplay muted playsinline loop disableremoteplayback class="mobile-video">
 								<source>
 							</video>
 						</a>

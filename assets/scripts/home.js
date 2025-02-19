@@ -97,12 +97,32 @@ function pickVideos() {
 		videoSource = video.querySelector('source');
 		videoSource.src = '/assets/thumbnails/' + randomVideos[i][1];
 		video.poster = `/assets/thumbnails/${randomVideos[i][0]}`;
-		video.load();
-		video.play();
+		video.style.backgroundImage = `url('/assets/thumbnails/${randomVideos[i][0]}')`;
+		video.setAttribute("playsinline", "");
+		video.setAttribute("muted", "");
+		if (window.innerWidth > 1030 && video.classList.contains('desktop-video')) {
+			video.load();
+			video.play();
+		} else if (window.innerWidth <= 1030 && video.classList.contains('mobile-video')) {
+			video.load();
+			video.play();
+		}
 		i++;
 	}
 }
 pickVideos();
+
+window.addEventListener('resize', () => {
+	for (let video of document.querySelectorAll('video')) {
+		if (window.innerWidth > 1030 && video.classList.contains('desktop-video')) {
+			video.load();
+			video.play();
+		} else if (window.innerWidth <= 1030 && video.classList.contains('mobile-video')) {
+			video.load();
+			video.play();
+		}
+	}
+});
 
 // Mobile text animation
 let groups = ['group1', 'group2', 'group3', 'group4', 'group5', 'group6', 'group7', 'group8'];
