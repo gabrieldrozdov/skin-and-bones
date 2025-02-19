@@ -2,8 +2,8 @@ import fs from 'fs'; // file management
 import path from 'path'; // file paths
 import axios from 'axios'; // download images
 import sharp from 'sharp'; // image compression
-import marked from "marked"; // convert markdown to js
-import DOMParser from 'xmldom'; // parse Simian XML data
+import { marked } from "marked"; // convert markdown to js
+import { DOMParser } from 'xmldom'; // parse Simian XML data
 
 // Site content
 import content from './content.json' assert { type: 'json' };

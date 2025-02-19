@@ -143,6 +143,11 @@
 .about-text-awards a {
 	text-decoration: unset;
 }
+.about-text-awards a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: .1em;
+}
 .about-text-awards[data-active="1"] {
 	display: block;
 }

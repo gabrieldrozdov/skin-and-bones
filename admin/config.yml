@@ -3,7 +3,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 
 media_folder: "assets/uploads" # Where images get stored
-public_folder: "/uploads"
+public_folder: "assets/uploads"
 
 collections:
   - name: "content"
