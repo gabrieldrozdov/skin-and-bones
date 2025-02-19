@@ -19,6 +19,9 @@
 	<meta property="og:description" content="Skin and Bones is an award-winning director representation and production company that makes great work.">
 	<meta property="og:image" content="/assets/meta/opengraph.jpg">
 
+
+			<!-- Netlify identity widget -->
+			<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 		</head>
 
 		<body>
@@ -780,6 +783,18 @@
 
 			<script src="/assets/scripts/nav.js"></script>
 			<script src="/assets/scripts/home.js"></script>
+
+			<script>
+				if (window.netlifyIdentity) {
+					window.netlifyIdentity.on("init", (user) => {
+					if (!user) {
+						window.netlifyIdentity.on("login", () => {
+						document.location.href = "/admin/";
+						});
+					}
+					});
+				}
+			</script>
 		</body>
 
 		</html>

@@ -754,6 +754,9 @@ function generateHomePage() {
 			<link rel="icon" type="png" href="/assets/meta/favicon.png">
 
 			${meta}
+
+			<!-- Netlify identity widget -->
+			<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 		</head>
 
 		<body>
@@ -1447,6 +1450,18 @@ function generateHomePage() {
 
 			<script src="/assets/scripts/nav.js"></script>
 			<script src="/assets/scripts/home.js"></script>
+
+			<script>
+				if (window.netlifyIdentity) {
+					window.netlifyIdentity.on("init", (user) => {
+					if (!user) {
+						window.netlifyIdentity.on("login", () => {
+						document.location.href = "/admin/";
+						});
+					}
+					});
+				}
+			</script>
 		</body>
 
 		</html>
