@@ -1,9 +1,9 @@
-import fs from 'fs';
-import path from 'path';
-import axios from 'axios';
-import sharp from 'sharp';
-import { DOMParser } from 'xmldom';
-import { JSDOM } from 'jsdom';
+import fs from 'fs'; // file management
+import path from 'path'; // file paths
+import axios from 'axios'; // download images
+import sharp from 'sharp'; // image compression
+import marked from "marked"; // convert markdown to js
+import DOMParser from 'xmldom'; // parse Simian XML data
 
 // Site content
 import content from './content.json' assert { type: 'json' };
@@ -658,7 +658,7 @@ function generateAboutPage() {
 							<svg class="about-text-awards-title-close" width="13" height="13" viewBox="0 0 13 13"><path d="M12.0586 6.80075L0.0585942 6.80078"/></svg>
 						</button>
 						<div class="about-text-awards" data-active="0">
-							${content['about-awards']}
+							${marked(content['about-awards'])}
 						</div>
 
 						<div class="about-text-footer-desktop">
