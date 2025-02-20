@@ -181,7 +181,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	top: calc(var(--line-height) * 6);
+	top: calc(calc(var(--line-height) * 6) - 1px);
 	background-color: white;
 	display: grid;
 	grid-template-columns: 1fr 80px;
