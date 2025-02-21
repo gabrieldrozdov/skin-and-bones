@@ -125,7 +125,7 @@
 	.home-column { 
 		grid-template-rows: repeat(5, minmax(0, 1fr));
 	}
-	.home-column > div:nth-child(6) {
+	.home-column > :nth-child(6) {
 		display: none;
 	}
 }
@@ -133,7 +133,7 @@
 	.home-column { 
 		grid-template-rows: repeat(4, minmax(0, 1fr));
 	}
-	.home-column > div:nth-child(5) {
+	.home-column > :nth-child(5) {
 		display: none;
 	}
 }
@@ -141,7 +141,7 @@
 	.home-column { 
 		grid-template-rows: repeat(3, minmax(0, 1fr));
 	}
-	.home-column > div:nth-child(4) {
+	.home-column > :nth-child(4) {
 		display: none;
 	}
 }
@@ -155,7 +155,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-top: var(--line-height);
 	white-space: nowrap;
 	padding: 5px 0;
 }

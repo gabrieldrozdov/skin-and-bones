@@ -731,7 +731,7 @@ function generateHomePage() {
 			continue
 		}
 
-		homeVideos += `["${entry['home-image']}", "${entry['home-video']}"], `;
+		homeVideos += `["${entry['home-image']}", "${entry['home-video']}", "${entry['slug']}"], `;
 
 		let br = '';
 		if (i < directors.length-1) {

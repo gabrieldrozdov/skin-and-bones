@@ -54,7 +54,7 @@
 	width: 100%;
 	--height1: calc(100dvh - var(--nav-height));
 	--height2: calc(var(--height1) - calc(var(--padding) * 2));
-	--about-height: calc(var(--height2) - calc(var(--line-height) * 5));
+	--about-height: calc(var(--height2) - calc(var(--line-height) * 4));
 	height: var(--about-height);
 }
 .about-media-small {
@@ -102,6 +102,7 @@
 	padding-bottom: calc(var(--padding) * 2);
 }
 .about-text-main {
+	transform: translateY(-4px);
 	font-size: 18px;
 	line-height: 1.15em;
 	text-wrap: pretty;
@@ -110,7 +111,7 @@
 	--about-height: calc(var(--height2) - calc(var(--line-height) * 5));
 	min-height: var(--about-height);
 	padding-bottom: calc(var(--line-height) * 2);
-	padding-right: 25%;
+	padding-right: 15%;
 }
 .about-text-awards-title {
 	

@@ -90,7 +90,6 @@ function getRandomEntries(arr) {
 // Pick videos
 function pickVideos() {
 	let randomVideos = getRandomEntries(homeVideos);
-	console.log(randomVideos);
 
 	let i = 0;
 	for (let video of document.querySelectorAll('video')) {
@@ -101,12 +100,24 @@ function pickVideos() {
 		video.setAttribute("playsinline", "");
 		video.setAttribute("muted", "");
 		if (window.innerWidth > 1030 && video.classList.contains('desktop-video')) {
-			video.load();
-			video.play();
+			if (video.readyState === 4) {
+				video.play();
+			} else {
+				video.load();
+				video.play();
+			}
 		} else if (window.innerWidth <= 1030 && video.classList.contains('mobile-video')) {
-			video.load();
-			video.play();
+			if (video.readyState === 4) {
+				video.play();
+			} else {
+				video.load();
+				video.play();
+			}
 		}
+
+		// Set video URL
+		video.parentElement.href = '/directors/' + randomVideos[i][2];
+
 		i++;
 	}
 }
@@ -115,11 +126,19 @@ pickVideos();
 window.addEventListener('resize', () => {
 	for (let video of document.querySelectorAll('video')) {
 		if (window.innerWidth > 1030 && video.classList.contains('desktop-video')) {
-			video.load();
-			video.play();
+			if (video.readyState === 4) {
+				video.play();
+			} else {
+				video.load();
+				video.play();
+			}
 		} else if (window.innerWidth <= 1030 && video.classList.contains('mobile-video')) {
-			video.load();
-			video.play();
+			if (video.readyState === 4) {
+				video.play();
+			} else {
+				video.load();
+				video.play();
+			}
 		}
 	}
 });
@@ -129,7 +148,6 @@ let groups = ['group1', 'group2', 'group3', 'group4', 'group5', 'group6', 'group
 function animateMobile() {
 	for (let group of groups) {
 		let elements = document.querySelectorAll(`[data-mobile="${group}"] div`);
-		let i = 0;
 		let temp = '';
 		for (let i = 0; i < elements.length; i++) {
 			if (i == 0) {
