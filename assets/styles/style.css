@@ -171,7 +171,6 @@ button {
 		left: 0;
 		right: 0;
 		padding: var(--padding);
-		background-color: white;
 		z-index: 999999;
 		height: unset;
 	}
@@ -184,6 +183,9 @@ button {
 	.container[data-view="contact"] .nav-links {
 		opacity: unset;
 		pointer-events: unset;
+	}
+	.container[data-view="contact"] .nav {
+		background-color: white;
 	}
 }
 
@@ -260,7 +262,12 @@ button {
 		display: block;
 	}
 	.container[data-view="menu"] .nav-mobile {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.nav[data-lightbox="1"] {
+		background-color: white;
 	}
 }
 
@@ -345,7 +352,6 @@ button {
 		align-items: start;
 		justify-content: end;
 		gap: calc(var(--line-height) * 2);
-		padding: var(--line-height);
 		bottom: 0;
 		height: unset;
 		top: calc(var(--line-height) * 2);

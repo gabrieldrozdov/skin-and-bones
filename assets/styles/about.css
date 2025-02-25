@@ -92,6 +92,9 @@
 	.about-media-small {
 		grid-column: auto;
 	}
+	.about-media-caption {
+		height: unset;
+	}
 }
 
 /* Main content */
@@ -102,7 +105,6 @@
 	padding-bottom: calc(var(--padding) * 2);
 }
 .about-text-main {
-	transform: translateY(-4px);
 	font-size: 18px;
 	line-height: 1.15em;
 	text-wrap: pretty;
@@ -116,7 +118,7 @@
 .about-text-awards-title {
 	
 }
-.about-text-awards-title:hover {
+.about-text-awards-title:hover span {
 	text-decoration: underline;
 	text-decoration-thickness: 1px;
 	text-underline-offset: .1em;
@@ -138,7 +140,8 @@
 .about-text-awards {
 	display: none;
 	margin-top: var(--line-height);
-	padding-right: 25%;
+	margin-bottom: var(--line-height);
+	padding-right: 40%;
 	text-wrap: pretty;
 }
 .about-text-awards a {
@@ -198,4 +201,5 @@
 .about-text-footer-mobile-credit {
 	font-size: calc(var(--font-size) * .8);
 	line-height: 1.3em;
+	margin-top: var(--line-height);
 }

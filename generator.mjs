@@ -206,7 +206,7 @@ async function generatePages() {
 			continue
 		}
 		let br = '';
-		if (i < directors.length-1) {
+		if (i < directors.length) {
 			br = '<br>';
 		}
 		navDirectors += `<a href="/directors/${entry['slug']}" data-director="${entry['slug']}">${entry['name']}</a>${br}`;
@@ -468,6 +468,10 @@ function generateDirectorPortfolioPage(director) {
 						</div>
 					</div>
 					<div class="director-portfolio-lightbox-right">
+						<div class="director-portfolio-lightbox-controls-fullscreen director-portfolio-lightbox-controls-fullscreen-mobile" onclick="toggleFullscreen();">
+							<div class="director-portfolio-lightbox-controls-fullscreen-circle"></div>
+							<div>FULL SCREEN</div>
+						</div>
 						<button class="director-portfolio-lightbox-close" onclick="closeLightbox();">[CLOSE]</button>
 						<div class="director-portfolio-lightbox-volume">
 							<div class="director-portfolio-lightbox-volume-levels" onmousedown="setVolume(event);" ontouchstart="setVolume(event);">
@@ -508,6 +512,10 @@ function generateDirectorPortfolioPage(director) {
 							</div>
 						</div>
 						<div class="director-portfolio-lightbox-controls">
+							<div class="director-portfolio-lightbox-controls-fullscreen director-portfolio-lightbox-controls-fullscreen-desktop" onclick="toggleFullscreen();">
+								<div class="director-portfolio-lightbox-controls-fullscreen-circle"></div>
+								<div>FULL SCREEN</div>
+							</div>
 							<div class="director-portfolio-lightbox-controls-play" data-active="1" onclick="playVideo();">
 								<svg width="15" height="11" viewBox="0 0 15 11"><path d="M14.4197 5.34601L0.517615 10.3385L0.517615 0.353517L14.4197 5.34601Z"/></svg>
 							</div>

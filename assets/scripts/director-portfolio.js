@@ -37,6 +37,9 @@ function formatTime(seconds) {
 
 // Lightbox
 function openLightbox(videoURL, client, project) {
+	const nav = document.querySelector('.nav');
+	nav.dataset.lightbox = 1;
+
 	const lightbox = document.querySelector('.director-portfolio-lightbox');
 	lightbox.dataset.active = 1;
 
@@ -44,6 +47,7 @@ function openLightbox(videoURL, client, project) {
 	videoSource.src = videoURL;
 	const video = document.querySelector('.director-portfolio-lightbox-media-video');
 	video.load();
+	playVideo();
 
 	const captionClient = document.querySelector('#client');
 	captionClient.innerText = client;
@@ -57,6 +61,9 @@ function openLightbox(videoURL, client, project) {
 	progress.style.width = '0%';
 }
 function closeLightbox() {
+	const nav = document.querySelector('.nav');
+	nav.dataset.lightbox = 0;
+
 	const lightbox = document.querySelector('.director-portfolio-lightbox');
 	lightbox.dataset.active = 0;
 	const videoSource = document.querySelector('.director-portfolio-lightbox-media-video source');
@@ -84,6 +91,10 @@ function playVideo() {
 }
 function toggleVideo() {
 	const video = document.querySelector('.director-portfolio-lightbox-media-video');
+	let fullscreen = checkFullscreen();
+	if (fullscreen) {
+		return
+	}
 	if (video.paused) {
 		playVideo();
 	} else {
@@ -260,4 +271,13 @@ function volumeDown() {
 		volume = 0;
 	}
 	updateVolume();
+}
+
+// Fullscreen
+function toggleFullscreen() {
+	const video = document.querySelector('.director-portfolio-lightbox-media-video');
+	video.requestFullscreen();
+}
+function checkFullscreen() {
+	return document.fullscreenElement === video;
 }
