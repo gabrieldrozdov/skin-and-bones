@@ -75,7 +75,7 @@ for (let newsItem of newsData) {
 			<p>${newsItem['date']}</p>
 			<br>
 			<p>
-				${newsItem['body']}
+				${marked(newsItem['body'])}
 			</p>
 		</section>
 	`;
