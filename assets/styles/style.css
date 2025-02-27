@@ -503,7 +503,6 @@ button {
 		right: 0;
 		left: 0;
 		gap: calc(var(--padding) * 1.5);
-		background-color: #F1F1F1;
 	}
 	.news-header-mobile-top a {
 		text-decoration: none;

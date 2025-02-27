@@ -106,14 +106,14 @@
 }
 .about-text-main {
 	font-size: 18px;
-	line-height: 1.15em;
+	line-height: 1.25em;
 	text-wrap: pretty;
 	--height1: calc(100dvh - var(--nav-height));
 	--height2: calc(var(--height1) - calc(var(--padding) * 2));
 	--about-height: calc(var(--height2) - calc(var(--line-height) * 5));
 	min-height: var(--about-height);
 	padding-bottom: calc(var(--line-height) * 2);
-	padding-right: 15%;
+	padding-right: 10%;
 }
 .about-text-awards-title {
 	
@@ -143,6 +143,11 @@
 	margin-bottom: var(--line-height);
 	padding-right: 40%;
 	text-wrap: pretty;
+}
+.about-text-awards br {
+	content: "";
+	margin: calc(var(--line-height) * .5);
+	display: block;
 }
 .about-text-awards a {
 	text-decoration: unset;

@@ -12,11 +12,11 @@ window.addEventListener('wheel', (event) => {
 		let difference = Math.abs(aboutPrevScrollDelta - aboutScrollDelta);
 		if (difference > 50) {
 			if (event.deltaY > 0) {
-				about.scrollTop += 20.5;
+				about.scrollTop += 22.5;
 			} else {
-				about.scrollTop -= 20.5;
+				about.scrollTop -= 22.5;
 			}
-			about.scrollTop = roundToNearestMultiple(about.scrollTop, 20.5);
+			about.scrollTop = roundToNearestMultiple(about.scrollTop, 22.5);
 		}
 		aboutPrevScrollDelta = aboutScrollDelta;
 	}

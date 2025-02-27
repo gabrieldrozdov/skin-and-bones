@@ -45,7 +45,7 @@ const contact = `
 			<div class="contact-block-line"></div>
 			<div>JOAN BELL</div>
 			<div>+1 416-994-8562</div>
-			<div><a href="mailto:liane@skinandbonesfilm.com">JOANE@SKINANDBONESFILM.COM</a></div>
+			<div><a href="mailto:liane@skinandbonesfilm.com">JOAN@SKINANDBONESFILM.COM</a></div>
 		</div>
 		<div class="contact-spacer">
 
@@ -448,7 +448,7 @@ function generateDirectorPortfolioPage(director) {
 					<div class="director-portfolio-info-mobile">
 						${awardsMobile}
 
-						<a href="/directors/" class="director-portfolio-info-all">SEE ALL DIRECTORS ⟶</a>
+						<a href="/directors/" class="director-portfolio-info-all">SEE ALL DIRECTORS <span>⟶</span></a>
 					</div>
 
 					<footer class="footer">
