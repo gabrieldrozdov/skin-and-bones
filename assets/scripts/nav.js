@@ -84,9 +84,17 @@ window.addEventListener('wheel', (event) => {
 });
 
 // Force news links to open in new tab
-for (let newsLink of document.querySelectorAll('.news a')) {
-	newsLink.addEventListener('click', (e) => {
+// for (let newsLink of document.querySelectorAll('.news a')) {
+// 	newsLink.addEventListener('click', (e) => {
+// 		e.preventDefault();
+// 		window.open(newsLink.href, '_blank').focus();
+// 	})
+// }
+
+// Force ALL links to open in a new tab
+for (let link of document.querySelectorAll('a')) {
+	link.addEventListener('click', (e) => {
 		e.preventDefault();
-		window.open(newsLink.href, '_blank').focus();
+		window.open(link.href, '_blank').focus();
 	})
 }

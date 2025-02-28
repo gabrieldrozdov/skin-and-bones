@@ -297,9 +297,9 @@ async function generatePages() {
 
 				${contact}
 			</div>
-			<script src="/assets/scripts/nav.js"></script>
 			<script src="/assets/scripts/directors-media.js"></script>
 			<script src="/assets/scripts/directors.js"></script>
+			<script src="/assets/scripts/nav.js"></script>
 		</body>
 
 		</html>
@@ -551,8 +551,8 @@ function generateDirectorPortfolioPage(director) {
 				${contact}
 			</div>
 
-			<script src="/assets/scripts/nav.js"></script>
 			<script src="/assets/scripts/director-portfolio.js"></script>
+			<script src="/assets/scripts/nav.js"></script>
 		</body>
 
 		</html>
@@ -715,8 +715,8 @@ function generateAboutPage() {
 				];
 			</script>
 
-			<script src="/assets/scripts/nav.js"></script>
 			<script src="/assets/scripts/about.js"></script>
+			<script src="/assets/scripts/nav.js"></script>
 		</body>
 
 		</html>
@@ -1456,8 +1456,8 @@ function generateHomePage() {
 				const homeVideos = [${homeVideos}];
 			</script>
 
-			<script src="/assets/scripts/nav.js"></script>
 			<script src="/assets/scripts/home.js"></script>
+			<script src="/assets/scripts/nav.js"></script>
 
 			<script>
 				if (window.netlifyIdentity) {
