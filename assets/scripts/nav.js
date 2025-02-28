@@ -82,3 +82,11 @@ window.addEventListener('wheel', (event) => {
 		newsPrevScrollDelta = newsScrollDelta;
 	}
 });
+
+// Force news links to open in new tab
+for (let newsLink of document.querySelectorAll('.news a')) {
+	newsLink.addEventListener('click', (e) => {
+		e.preventDefault();
+		window.open(newsLink.href, '_blank').focus();
+	})
+}

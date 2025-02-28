@@ -18,7 +18,7 @@ const year = new Date().getFullYear();
 // Meta tags
 const meta = `
 	<meta name="author" content="SKIN & BONES">
-	<meta name="keywords" content="Film Company, Production Partners, Storytellers, Female Owned, Shot Callers">
+	<meta name="keywords" content="Film Company, Production Partner, Storytellers, Female Owned, Shot Callers">
 	<meta name="description" content="Skin and Bones is an award-winning director representation and production company that makes great work.">
 	<meta property="og:url" content="https://smallsites.gdwithgd.com/">
 	<meta name="og:title" property="og:title" content="SKIN & BONES">
@@ -1110,13 +1110,13 @@ function generateHomePage() {
 							<div></div>
 						</div>
 						<div class="home-cell-text">
-							<div>PRODUCTION PARTNERS</div>
-							<div>PRODUCTION PARTNERS</div>
+							<div>PRODUCTION PARTNER</div>
+							<div>PRODUCTION PARTNER</div>
 							<div></div>
-							<div>PRODUCTION PARTNERS</div>
+							<div>PRODUCTION PARTNER</div>
 							<div></div>
 							<div></div>
-							<div>PRODUCTION PARTNERS</div>
+							<div>PRODUCTION PARTNER</div>
 						</div>
 						<div class="home-cell-text">
 							<div></div>
@@ -1215,10 +1215,10 @@ function generateHomePage() {
 						<div></div>
 						<div class="home-mobile-text" data-mobile="group2">
 							<div></div>
-							<div>PRODUCTION PARTNERS</div>
+							<div>PRODUCTION PARTNER</div>
 							<div></div>
-							<div>PRODUCTION PARTNERS</div>
-							<div>PRODUCTION PARTNERS</div>
+							<div>PRODUCTION PARTNER</div>
+							<div>PRODUCTION PARTNER</div>
 						</div>
 					</div>
 					<div class="home-mobile-2col-right">
@@ -1229,10 +1229,10 @@ function generateHomePage() {
 						</a>
 						<div class="home-mobile-text" data-mobile="group2">
 							<div></div>
-							<div>PRODUCTION PARTNERS</div>
-							<div>PRODUCTION PARTNERS</div>
+							<div>PRODUCTION PARTNER</div>
+							<div>PRODUCTION PARTNER</div>
 							<div></div>
-							<div>PRODUCTION PARTNERS</div>
+							<div>PRODUCTION PARTNER</div>
 						</div>
 					</div>
 					<div class="home-mobile-text home-mobile-span">
